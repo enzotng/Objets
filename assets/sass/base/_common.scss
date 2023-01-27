@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: $background;
+}
+
+main {
+  height: calc(100vh - 10vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  p {
+    line-height: 2;
+  }
+}
+
+.preloader {
+  height: 100vh;
+  position: absolute;
+  .loader {
+      background: url('../../assets/images/svg/loader.svg') 50% 50% no-repeat $background;
+      height: 100%;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h1 {
+          font-size: 1.5rem;
+          width: 30%;
+          text-align: center;
+          margin-top: 20vh;
+      }
+  }
+}
